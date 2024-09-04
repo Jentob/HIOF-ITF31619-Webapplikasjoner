@@ -1,0 +1,22 @@
+@startuml post
+
+!theme mars
+
+skinparam maxMessageSize 300
+
+Participant "Client" as C
+Participant "Server" as S
+Database "Database" as D
+
+title Nytt prosjekt med POST
+
+C -> C :  Bruker lager prosjekt
+C -> S :  HTTP POST request med json data
+S -> S :  Validerer data
+S -> S :  Genererer server side data som ID, etc.
+S -> D :  Skriver til database
+D --> S : Write confirmation
+S --> C : HTTP 201 response med oppdatert json data
+C -> C :  Oppdaterer UI med ny data
+
+@enduml

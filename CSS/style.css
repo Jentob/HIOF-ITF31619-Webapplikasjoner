@@ -1,0 +1,131 @@
+@import "normalize.css";
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --bg: rgb(250, 252, 252);
+    --text: rgb(8, 10, 10);
+    --border: var(--text);
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    --button: rgb(20, 200, 100);
+    --button-text: var(--bg);
+    --br: 5px;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+header {
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+
+    a {
+        font-weight: 700;
+        color: var(--text);
+        text-decoration: none;
+    }
+
+    .logo {
+        font-weight: 900;
+    }
+
+    .user {
+        color: gray
+    }
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 1rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+
+        label:not(:first-child) {
+            margin-top: 1rem;
+        }
+
+        input {
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: var(--br);
+            min-width: min(calc(300px - 2rem), calc(100% - 1rem));
+            width: 50%;
+            background: var(--bg);
+        }
+
+        textarea {
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: var(--br);
+            resize: none;
+            height: 9.2rem;
+            background: var(--bg);
+        }
+
+        button {
+            padding: 0.5rem 2rem;
+            background-color: var(--button);
+            color: var(--button-text);
+            border: none;
+            border-radius: var(--br);
+            margin-left: auto;
+            margin-top: 1rem;
+        }
+    }
+
+    section {
+        .todo-list {
+            display: grid;
+            flex-wrap: wrap;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(calc(300px - 2rem), 1fr));
+
+            article {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                box-shadow: var(--shadow);
+                border-radius: var(--br);
+                padding: 1rem;
+
+                h2, p {
+                    margin: 0;
+                }
+
+                button {
+                    padding: 0.5rem 1rem;
+                    background-color: var(--button);
+                    color: var(--button-text);
+                    border: none;
+                    border-radius: var(--br);
+                    margin-top: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+}

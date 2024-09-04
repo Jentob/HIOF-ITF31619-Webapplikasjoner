@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="nb" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tobias Jensen Portefølje</title>
+        <script type="module" src="/main.ts" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Tobias Jensen Portefølje</h1>
+            </header>
+            <main>
+                <section class="about-me">
+                    <h2>Om meg</h2>
+                    <p>
+                        Jeg er en student som tar en bachelor i informatikk ved
+                        Høgskolen i Østfold. Jeg kan lage nettsider (som delvis
+                        funker).
+                    </p>
+                </section>
+                <section class="skills">
+                    <h2>Ferdigheter</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>Linux</li>
+                        <li>Relasjonsdatabaser</li>
+                        <li>Git / Github</li>
+                        <li>JavaScript og litt TypeScript</li>
+                        <li>Litt PHP</li>
+                    </ul>
+                </section>
+                <section class="projects">
+                    <h2>Prosjekter</h2>
+                    <div id="project-section"></div>
+                    <div class="divider">
+                        <form id="project-form">
+                            <fieldset>
+                                <legend>Legg til prosjekt</legend>
+                                <label for="pf-title">Tittel</label>
+                                <input type="text" name="title" id="pf-title" />
+                                <label for="pf-body">Beskrivelse</label>
+                                <input type="text" name="body" id="pf-body" />
+                                <label for="pf-url"
+                                    >Link til prosjektsiden</label
+                                >
+                                <input type="url" name="url" id="pf-url" />
+                                <button type="submit">Legg til</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

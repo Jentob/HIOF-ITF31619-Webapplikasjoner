@@ -1,0 +1,119 @@
+@import url(./reset.css);
+
+:root {
+    --text: rgb(5, 10, 10);
+    --bg: rgb (245 250, 250);
+    --secondary: rgb(220, 220, 220);
+    --shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    --error-text: rgb(120, 0, 0);
+    --error-bg: rgb(255, 230, 230);
+    --error-shadow: rgba(60, 0, 0, 0.2) 0px 1px 3px 0px,
+        rgba(100, 0, 0, 0.35) 0px 0px 0px 1px;
+
+    --info-text: rgb(0, 0, 120);
+    --info-bg: rgb(230, 240, 255);
+    --info-shadow: rgba(0, 0, 60, 0.2) 0px 1px 3px 0px,
+        rgba(0, 0, 100, 0.35) 0px 0px 0px 1px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+body > .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 4rem 1rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+form {
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+
+    label:not(:first-child),
+    button:not(:first-child) {
+        margin-top: 1rem;
+    }
+}
+
+h3,
+legend {
+    font-size: 1.17em;
+    font-weight: 700;
+}
+
+section.projects {
+    ul {
+        padding: 0;
+        list-style: none;
+        margin-top: 1rem;
+    }
+
+    li {
+        box-shadow: var(--shadow);
+        padding: 1rem;
+    }
+
+    li:not(:first-child) {
+        margin-top: 1rem;
+    }
+}
+
+button {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.divider {
+    margin-top: 1rem;
+}
+
+.divider::before {
+    display: block;
+    content: "";
+    width: 98%;
+    border-bottom: 2px dotted var(--secondary);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.error,
+div.info {
+    padding: 1rem;
+}
+
+div.error {
+    background: var(--error-bg);
+    box-shadow: var(--error-shadow);
+    color: var(--error-text);
+}
+
+div.info {
+    background: var(--info-bg);
+    box-shadow: var(--info-shadow);
+    color: var(--info-text);
+}

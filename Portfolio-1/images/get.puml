@@ -1,0 +1,19 @@
+@startuml get
+
+!theme mars
+
+skinparam maxMessageSize 300
+
+Participant "Client" as C
+Participant "Server" as S
+Database "Database" as D
+
+title Hente prosjekter med GET
+
+C -> S:  HTTP GET request
+S -> D:  Leser fra database
+D --> S: Returnerer data
+S --> C: HTTP 200 response med json data
+C -> C : Oppdaterer UI med data
+
+@enduml
