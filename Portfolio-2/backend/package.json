@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "type": "module",
+    "main": "src/server.ts",
+    "scripts": {
+        "dev": "bun run --hot ./src/server.ts",
+        "build": "bun build ./src/server.ts --outdir dist",
+        "remove-dist": "rm -rf dist",
+        "test": "bun test",
+        "lint": "eslint .",
+        "format:check": "prettier -c .",
+        "format:write": "prettier -w ."
+    },
+    "dependencies": {
+        "hono": "^4.5.11",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.10.0",
+        "@types/bun": "latest",
+        "@types/eslint-config-prettier": "^6.11.3",
+        "eslint": "^9.10.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "^3.3.3",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.5.0"
+    }
+}

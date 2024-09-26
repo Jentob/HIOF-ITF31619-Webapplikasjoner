@@ -1,0 +1,47 @@
+[
+    {
+        "id": "71cbc2ac-f003-4422-88f6-90a9ed74b1a8",
+        "type": "project",
+        "createdAt": 1724782093663,
+        "updatedAt": 1724782093663,
+        "title": "Personlig nettside",
+        "description": "Nettside for CVen min laget med Astro",
+        "url": "https://github.com/Jentob/jentob.github.io",
+        "tags": [
+            { "name": "Node" },
+            { "name": "Typescript" },
+            { "name": "Astro" },
+            { "name": "Nettside" }
+        ]
+    },
+    {
+        "id": "5d0ea3e1-f03c-42f1-8c21-b470da12849d",
+        "type": "project",
+        "createdAt": 1724787839163,
+        "updatedAt": 1724787839163,
+        "title": "PHP-side",
+        "description": "Oblig i Datasikkerhet i utvikling og drift",
+        "url": "https://github.com/sanderbjo/Datasikkerhet-i-utvikling-og-drift",
+        "tags": [
+            { "name": "PHP" },
+            { "name": "Nettside" },
+            { "name": "Datasikkerhet" }
+        ]
+    },
+    {
+        "title": "Skoleoppgaver",
+        "description": "Oppgaver til emnet ITF31619 Webapplikasjoner",
+        "url": "https://github.com/Jentob/HIOF-ITF31619-Webapplikasjoner",
+        "tags": [
+            { "name": "Typescript" },
+            { "name": "Javascript" },
+            { "name": "Node" },
+            { "name": "Bun" },
+            { "name": "Nettside" }
+        ],
+        "id": "6aabb392-e677-4d4d-9713-5cda9950e93e",
+        "type": "project",
+        "createdAt": 1727355777605,
+        "updatedAt": 1727355777605
+    }
+]
