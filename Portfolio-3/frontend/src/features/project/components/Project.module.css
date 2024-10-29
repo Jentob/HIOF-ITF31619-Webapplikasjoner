@@ -1,0 +1,18 @@
+h3 {
+    margin: 0;
+}
+article {
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+article:not(:first-child) {
+    margin-top: 1rem;
+}
+
+article > * {
+    display: block;
+}
+article > *:not(:first-child) {
+    margin-top: 1rem;
+}

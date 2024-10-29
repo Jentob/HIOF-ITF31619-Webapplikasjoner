@@ -1,0 +1,35 @@
+{
+    "private": true,
+    "type": "module",
+    "main": "src/server.ts",
+    "scripts": {
+        "dev": "bun run --hot ./src/server.ts",
+        "build": "bun build ./src/server.ts --outdir dist",
+        "remove-dist": "rm -rf dist",
+        "test": "bun test",
+        "lint": "eslint .",
+        "format:check": "prettier -c .",
+        "format:write": "prettier -w .",
+        "db:generate": "bunx drizzle-kit generate",
+        "db:migrate": "bun run ./src/database/migrate.ts",
+        "db:seed": "bun run ./src/database/seed.ts"
+    },
+    "dependencies": {
+        "@t3-oss/env-core": "^0.11.1",
+        "drizzle-orm": "^0.33.0",
+        "drizzle-zod": "^0.5.1",
+        "hono": "^4.6.3",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.12.0",
+        "@types/bun": "latest",
+        "@types/eslint-config-prettier": "^6.11.3",
+        "drizzle-kit": "^0.24.2",
+        "eslint": "^9.12.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "^3.3.3",
+        "typescript": "^5.6.2",
+        "typescript-eslint": "^8.8.0"
+    }
+}

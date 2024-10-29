@@ -1,0 +1,5 @@
+preload = ["./src/database/migrate.ts"]
+
+[test]
+root = "./tests"
+preload = ["./src/database/migrate.ts"]

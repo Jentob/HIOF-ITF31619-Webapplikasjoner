@@ -1,0 +1,24 @@
+form {
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        border: none;
+
+        label:not(:first-child),
+        button:not(:first-child) {
+            margin-top: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+        button {
+            width: fit-content;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import url(normalize.css);
+@import url(base.css);
+@import url(forms.css);
+
+#root {
+    max-width: 800px;
+    margin: auto;
+    padding: 4rem 1rem;
+}
+
+header {
+    margin-bottom: 2rem;
+
+    p {
+        text-align: center;
+        font-size: large;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+h3,
+legend {
+    font-size: 1.17em;
+    font-weight: 700;
+}
+
+div.error,
+div.info {
+    padding: 1rem;
+}
+
+div.error {
+    background: var(--error-bg);
+    box-shadow: var(--error-shadow);
+    color: var(--error-text);
+}
+
+div.info {
+    background: var(--info-bg);
+    box-shadow: var(--info-shadow);
+    color: var(--info-text);
+}

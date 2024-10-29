@@ -1,0 +1,13 @@
+{
+    "name": "Tobias Jensen",
+    "email": "tobiasje@hiof.no",
+    "about": "Jeg er en student som tar en bachelor i informatikk ved Høgskolen i Østfold.",
+    "skills": [
+        { "name": "Python" },
+        { "name": "Linux" },
+        { "name": "Relasjonsdatabaser" },
+        { "name": "Git / Github" },
+        { "name": "JavaScript og litt TypeScript" },
+        { "name": "PHP" }
+    ]
+}
